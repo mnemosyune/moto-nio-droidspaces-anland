@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<!--
+  Anland 5.23 input preferences used by this project.
+  Device path: /data/data/com.anland.consumer/shared_prefs/anland_settings.xml
+  The file is owned by the Anland app; back it up before replacing it.
+  `scripts/host/anland_bt_input_setup.sh` installs these values and enables
+  the Anland accessibility key interceptor.
+-->
+<map>
+    <string name="extra_keys_mode">with_keyboard</string>
+    <string name="screen_orientation">default</string>
+    <boolean name="pointer_capture" value="true" />
+    <boolean name="accessibility_key_intercept" value="true" />
+</map>

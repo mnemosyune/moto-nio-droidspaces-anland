@@ -1,0 +1,36 @@
+# Local build / device artifacts (never commit these)
+/backup/
+/kernel/
+/rootfs/
+/apk_x/
+/adb/
+/tools/
+/vm/
+*.img
+*.tar.xz
+*.apk
+*.zip
+*.log
+
+# Keep the curated release artifacts under dist/ even though the generic
+# archive patterns above ignore most zips elsewhere.
+!/dist/kernel/*.zip
+
+# Kernel build output
+/out/
+build/kernel/kernel-source/
+build/kernel/clang/
+build/kernel/aarch64-linux-android-4.9/
+build/kernel/arm-linux-androideabi-4.9/
+
+# Local configs / secrets
+*.secret
+.env
+.env.*
+local.properties
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp

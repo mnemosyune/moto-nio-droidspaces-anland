@@ -1,0 +1,28 @@
+# Example Droidspaces container configuration for this project.
+# Copy to:
+#   /data/local/Droidspaces/Containers/kde/container.config
+#
+# Droidspaces generates uuid on first creation; do not copy another device's
+# uuid into your config.  Change rootfs_path if your image has another name.
+# This file uses host networking (the current, verified setup).
+
+name=kde
+hostname=kde
+rootfs_path=/data/local/Droidspaces/Containers/kde/rootfs.img
+net_mode=host
+disable_ipv6=0
+enable_android_storage=0
+enable_hw_access=0
+enable_gpu_mode=1
+enable_x11=0
+enable_virgl=0
+enable_pulseaudio=0
+selinux_permissive=0
+allow_sandboxing=1
+volatile_mode=0
+dns_servers=114.114.114.114
+run_at_boot=0
+enable_anland=1
+force_cgroupv1=0
+use_sparse_image=1
+sparse_image_size_gb=8

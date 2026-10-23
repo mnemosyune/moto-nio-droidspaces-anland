@@ -1,0 +1,12 @@
+[Unit]
+Description=Droidspaces IPv6 NAT66 address
+After=network.target
+Wants=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c 'ip -6 addr add fd64:7370::2/64 dev eth0 2>/dev/null || true; ip -6 route add default via fd64:7370::1 dev eth0 2>/dev/null || true'
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

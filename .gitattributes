@@ -1,0 +1,23 @@
+* text=auto
+
+# Shell scripts and docs must stay LF, including on Windows checkouts.
+*.sh text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.config text eol=lf
+*.example text eol=lf
+*.xml text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+LICENSE text eol=lf
+SHA256SUMS text eol=lf
+dist/kernel/LICENSE-GPL-2.0 text eol=lf
+
+# Images and release binaries
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.zip binary
+*.img binary
+dist/kernel/Image-* binary
+dist/kernel/config-* text eol=lf
